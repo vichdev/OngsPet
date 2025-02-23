@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OngsPet.Application.UseCases.User.Register;
 using OngsPet.Communication.Requests;
 using OngsPet.Communication.Responses;
 
@@ -13,7 +14,10 @@ namespace OngsPet.API.Controllers
         [ProducesResponseType(typeof(ResponseRegisterUserDTO), StatusCodes.Status201Created)]
         public IActionResult Register(RequestRegisterUserDTO request)
         {
-            return Created();
+            var useCase = new RegisterUserUseCase();
+            var response = useCase.Execute(request);
+
+            return Created(string.Empty, response);
         }
     }
 }

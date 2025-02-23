@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Shared\OngsPet.Communication\OngsPet.Communication.csproj" />
     <ProjectReference Include="..\..\Shared\OngsPet.Exceptions\OngsPet.Exceptions.csproj" />
     <ProjectReference Include="..\OngsPet.Domain\OngsPet.Domain.csproj" />
