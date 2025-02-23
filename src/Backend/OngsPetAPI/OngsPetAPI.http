@@ -1,0 +1,6 @@
+@OngsPetAPI_HostAddress = http://localhost:5213
+
+GET {{OngsPetAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
