@@ -13,7 +13,7 @@ namespace OngsPet.API.Filters
         public void OnException(ExceptionContext context)
         {
 
-            if (context.Exception is OngsPetException exception)
+            if (context.Exception is OngsPetException)
             {
                 HandleException(context);
             }

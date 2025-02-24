@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -15,6 +15,7 @@
     <ProjectReference Include="..\..\Shared\OngsPet.Communication\OngsPet.Communication.csproj" />
     <ProjectReference Include="..\..\Shared\OngsPet.Exceptions\OngsPet.Exceptions.csproj" />
     <ProjectReference Include="..\OngsPet.Application\OngsPet.Application.csproj" />
+    <ProjectReference Include="..\OnsgPet.Infrastructure\OngsPet.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

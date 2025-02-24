@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngsPet.Application", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngsPet.Domain", "src\Backend\OngsPet.Domain\OngsPet.Domain.csproj", "{8CC77947-7514-4C8B-9E15-0E4F72E30332}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnsgPet.Infrastructure", "src\Backend\OnsgPet.Infrastructure\OnsgPet.Infrastructure.csproj", "{61E286F8-A938-44FF-87DA-ED87C8287339}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngsPet.Infrastructure", "src\Backend\OnsgPet.Infrastructure\OngsPet.Infrastructure.csproj", "{61E286F8-A938-44FF-87DA-ED87C8287339}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngsPet.Communication", "src\Shared\OngsPet.Communication\OngsPet.Communication.csproj", "{2B701A60-4D02-48FF-9745-AAC290D0E514}"
 EndProject

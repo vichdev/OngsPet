@@ -1,5 +1,7 @@
 using OngsPet.API.Filters;
 using OngsPet.API.Middleware;
+using OngsPet.Application;
+using OngsPet.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
+
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication(builder.Configuration);
 
 var app = builder.Build();
 

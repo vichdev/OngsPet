@@ -12,10 +12,9 @@ namespace OngsPet.API.Controllers
     {
         [HttpPost]
         [ProducesResponseType(typeof(ResponseRegisterUserDTO), StatusCodes.Status201Created)]
-        public IActionResult Register(RequestRegisterUserDTO request)
+        public async Task<IActionResult> Register([FromServices] IRegisterUserUseCase useCase, RequestRegisterUserDTO request)
         {
-            var useCase = new RegisterUserUseCase();
-            var response = useCase.Execute(request);
+            var response = await useCase.Execute(request);
 
             return Created(string.Empty, response);
         }
